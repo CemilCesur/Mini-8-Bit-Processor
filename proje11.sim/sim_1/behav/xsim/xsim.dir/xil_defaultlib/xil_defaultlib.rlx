@@ -1,0 +1,18 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv,1625923771,systemVerilog,,,,micro_tb,,uvm,,,,,,
+C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/Program Counter.sv,1625924280,systemVerilog,,C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv,,Program_Counter,,uvm,,,,,,
+C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv,1625916184,systemVerilog,,C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv,,alu,,uvm,,,,,,
+C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv,1625482595,systemVerilog,,C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv,,control_unit,,uvm,,,,,,
+C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv,1625917648,systemVerilog,,C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv,,data_memory,,uvm,,,,,,
+C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv,1625428923,systemVerilog,,C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv,,fulladder,,uvm,,,,,,
+C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv,1625428981,systemVerilog,,C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv,,fulladder2,,uvm,,,,,,
+C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv,1625915956,systemVerilog,,C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv,,instruction,,uvm,,,,,,
+C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv,1625924818,systemVerilog,,C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv,,instruction_memory,,uvm,,,,,,
+C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv,1625428973,systemVerilog,,C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv,,mux2,,uvm,,,,,,
+C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv,1625429981,systemVerilog,,C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv,,mux2_3,,uvm,,,,,,
+C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv,1625428978,systemVerilog,,C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv,,mux8,,uvm,,,,,,
+C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv,1625486924,systemVerilog,,C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv,,register,,uvm,,,,,,

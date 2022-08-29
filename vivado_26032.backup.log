@@ -1,0 +1,2521 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul  5 14:15:43 2021
+# Process ID: 26032
+# Current directory: C:/Users/bjk_e/Desktop/proje11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32628 C:\Users\bjk_e\Desktop\proje11\proje11.xpr
+# Log file: C:/Users/bjk_e/Desktop/proje11/vivado.log
+# Journal file: C:/Users/bjk_e/Desktop/proje11\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bjk_e/Desktop/proje11/proje11.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/emrek/proje11' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2458] undeclared symbol ALUSrc, assumed default net type wire [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv:33]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 8 for port 'd0' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:33]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 8 for port 'PC' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:41]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 999.406 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 999.406 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1051.586 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1129.121 ; gain = 0.137
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1129.121 ; gain = 0.137
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1535.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1674.711 ; gain = 675.305
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: instruction_memory
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1892.277 ; gain = 70.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (1#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv:23]
+WARNING: [Synth 8-689] width (2) of port connection 'y' does not match port width (8) of module 'mux2' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:33]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (2#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2_3' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2_3' (3#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (4#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fulladder' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fulladder2' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fulladder2' (5#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fulladder' (6#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (7#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (8#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (9#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'instruction' (10#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (11#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1943.531 ; gain = 121.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1961.441 ; gain = 139.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1961.441 ; gain = 139.641
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1961.441 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2079.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2103.934 ; gain = 282.133
+24 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2103.934 ; gain = 282.133
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2178.500 ; gain = 15.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (1#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (2#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2_3' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2_3' (3#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (4#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fulladder' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fulladder2' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fulladder2' (5#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fulladder' (6#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (7#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (8#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (9#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'instruction' (10#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (11#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2214.898 ; gain = 51.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2237.809 ; gain = 74.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2237.809 ; gain = 74.789
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2249.520 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2249.520 ; gain = 86.500
+close_design
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2458] undeclared symbol ALUSrc, assumed default net type wire [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv:33]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2249.520 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: instruction_memory
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2249.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (1#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (2#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2_3' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2_3' (3#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (4#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fulladder' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fulladder2' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fulladder2' (5#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fulladder' (6#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (7#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (8#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (9#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'instruction' (10#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (11#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2249.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2249.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2249.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2249.520 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2249.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2249.520 ; gain = 0.000
+24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2249.520 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2249.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (1#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (2#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2_3' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2_3' (3#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (4#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fulladder' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fulladder2' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fulladder2' (5#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fulladder' (6#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (7#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (8#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (9#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'instruction' (10#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (11#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2249.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2270.457 ; gain = 20.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2270.457 ; gain = 20.938
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2281.820 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2281.820 ; gain = 32.301
+close_design
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2281.820 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2642.023 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2642.023 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2642.023 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2642.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: instruction_memory
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2642.023 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (1#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (2#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2_3' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2_3' (3#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (4#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fulladder' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fulladder2' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fulladder2' (5#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fulladder' (6#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (7#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (8#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (9#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'instruction' (10#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (11#1) [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2642.023 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2642.023 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2642.023 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2642.023 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2642.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2642.023 ; gain = 0.000
+24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2642.023 ; gain = 0.000
+close_design
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+WARNING: [VRFC 10-3705] select index 3 into 'rf' is out of bounds [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:30]
+WARNING: [VRFC 10-3705] select index 4 into 'rf' is out of bounds [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:31]
+WARNING: [VRFC 10-3705] select index 5 into 'rf' is out of bounds [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:32]
+WARNING: [VRFC 10-3705] select index 6 into 'rf' is out of bounds [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:33]
+WARNING: [VRFC 10-3705] select index 7 into 'rf' is out of bounds [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:34]
+WARNING: [VRFC 10-3705] select index 7 into 'rf' is out of bounds [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2642.023 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2642.023 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+WARNING: [VRFC 10-3705] select index 2 into 'instructionMemory' is out of bounds [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:36]
+WARNING: [VRFC 10-3705] select index 2 into 'instructionMemory' is out of bounds [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 2709.707 ; gain = 30.832
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2709.707 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2709.707 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_bd_design {C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/bd/design_1/design_1.bd>...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:ai_engine:1.0 ai_engine - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:ai_engine:1.0 ai_engine"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:aurora:1.0 aurora - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:aurora:1.0 aurora"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:axi4:1.0 axi4 - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:axi4:1.0 axi4"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:axi_ethernet:1.0 axi_ethernet - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:axi_ethernet:1.0 axi_ethernet"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:board:1.0 board - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:board:1.0 board"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:clkrst:1.0 clkrst - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:clkrst:1.0 clkrst"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:cpri:1.0 cpri - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:cpri:1.0 cpri"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:ethernet_1_10_25g:1.0 ethernet_1_10_25g - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:ethernet_1_10_25g:1.0 ethernet_1_10_25g"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:gig_ethernet_pcs_pma:1.0 gig_ethernet_pcs_pma - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:gig_ethernet_pcs_pma:1.0 gig_ethernet_pcs_pma"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:gt_ips:1.0 gt_ips - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:gt_ips:1.0 gt_ips"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:gt_tx_rx:1.0 gt_tx_rx - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:gt_tx_rx:1.0 gt_tx_rx"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:hdmi_gt_controller:1.0 hdmi_gt_controller - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:hdmi_gt_controller:1.0 hdmi_gt_controller"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:jesd204c:1.0 jesd204c - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:jesd204c:1.0 jesd204c"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:l_ethernet:1.0 l_ethernet - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:l_ethernet:1.0 l_ethernet"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:microblaze:1.0 microblaze - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:microblaze:1.0 microblaze"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:mrmac:1.0 mrmac - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:mrmac:1.0 mrmac"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:oran_radio_if:1.0 oran_radio_if - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:oran_radio_if:1.0 oran_radio_if"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:pcie4_uscale_plus:1.0 pcie4_uscale_plus - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:pcie4_uscale_plus:1.0 pcie4_uscale_plus"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:pcie4c_uscale_plus:1.0 pcie4c_uscale_plus - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:pcie4c_uscale_plus:1.0 pcie4c_uscale_plus"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:pcie_dma_versal:1.0 pcie_dma_versal - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:pcie_dma_versal:1.0 pcie_dma_versal"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:pcie_phy_versal:1.0 pcie_phy_versal - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:pcie_phy_versal:1.0 pcie_phy_versal"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:pcie_versal:1.0 pcie_versal - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:pcie_versal:1.0 pcie_versal"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:qdma:1.0 qdma - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:qdma:1.0 qdma"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:quadsgmii:1.0 quadsgmii - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:quadsgmii:1.0 quadsgmii"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:tmr:1.0 tmr - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:tmr:1.0 tmr"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:usxgmii:1.0 usxgmii - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:usxgmii:1.0 usxgmii"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_cips:1.0 versal_cips - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_cips:1.0 versal_cips"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_dp_rx_ss:1.0 versal_dp_rx_ss - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_dp_rx_ss:1.0 versal_dp_rx_ss"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_dp_tx_ss:1.0 versal_dp_tx_ss - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_dp_tx_ss:1.0 versal_dp_tx_ss"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_hdmi_rx_ss:1.0 versal_hdmi_rx_ss - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_hdmi_rx_ss:1.0 versal_hdmi_rx_ss"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_hdmi_tx_ss:1.0 versal_hdmi_tx_ss - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_hdmi_tx_ss:1.0 versal_hdmi_tx_ss"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_sdi_rx_ss:1.0 versal_sdi_rx_ss - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_sdi_rx_ss:1.0 versal_sdi_rx_ss"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+1
+ERROR: [Ip 78-89] Error in evaluating command ::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_sdi_tx_ss:1.0 versal_sdi_tx_ss - 1
+    while executing
+"catch {uplevel 1 [list rdi::tcl::unknown {*}$args]} result"
+    (procedure "::unknown" line 40)
+    invoked from within
+"::xgui::utils::init_utils ::xilinx.com:bd_rule:versal_sdi_tx_ss:1.0 versal_sdi_tx_ss"
+ERROR: [Ip 78-89] Error in evaluating command source init.tcl
+ - 
+    while executing
+"source init.tcl"
+1
+ERROR: [Ip 78-89] Error in evaluating command source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]
+ - 
+    while executing
+"source [rdi::utils::find_approot_file scripts/xguifrmwork/init.tcl]"
+INFO: [Common 17-14] Message 'Ip 78-89' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+1
+1
+1
+1
+INFO: [BD 41-1808] Open Block Design has been cancelled.
+open_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2709.707 ; gain = 0.000
+INFO: [Common 17-344] 'open_bd_design' was cancelled
+close [ open {C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/Program Counter.sv} w ]
+add_files {{C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/Program Counter.sv}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/Program Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2709.707 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/Program Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+WARNING: [VRFC 10-3823] variable 'PC1' might have multiple concurrent drivers [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:35]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2709.707 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/Program Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+WARNING: [VRFC 10-3823] variable 'PC1' might have multiple concurrent drivers [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:35]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2709.707 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/Program Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+WARNING: [VRFC 10-3823] variable 'PC1' might have multiple concurrent drivers [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:35]
+WARNING: [VRFC 10-3705] select index 10 into 'instructionMemory' is out of bounds [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2709.707 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2709.707 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 3309.719 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/Program Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+WARNING: [VRFC 10-3705] select index 10 into 'instructionMemory' is out of bounds [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 3309.719 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/Program Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+WARNING: [VRFC 10-3823] variable 'PC1' might have multiple concurrent drivers [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:45]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 3309.719 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/Program Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+WARNING: [VRFC 10-3823] variable 'PC1' might have multiple concurrent drivers [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:45]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 3309.719 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'micro_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj micro_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/Program Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/control_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/fulladder2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux2_3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/mux8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sim_1/new/micro_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module micro_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+"xelab -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ac78abe601ce4486822de7d2a98ec020 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot micro_tb_behav xil_defaultlib.micro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'cin' [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/alu.sv:33]
+WARNING: [VRFC 10-3823] variable 'PC1' might have multiple concurrent drivers [C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/instruction_memory.sv:45]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.mux2_3
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.fulladder2
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.instruction_memory
+Compiling module xil_defaultlib.micro_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot micro_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bjk_e/Desktop/proje11/proje11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "micro_tb_behav -key {Behavioral:sim_1:Functional:micro_tb} -tclbatch {micro_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source micro_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'micro_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 3309.719 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  5 16:07:59 2021...

@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul  5 14:15:43 2021
+# Process ID: 26032
+# Current directory: C:/Users/bjk_e/Desktop/proje11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32628 C:\Users\bjk_e\Desktop\proje11\proje11.xpr
+# Log file: C:/Users/bjk_e/Desktop/proje11/vivado.log
+# Journal file: C:/Users/bjk_e/Desktop/proje11\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bjk_e/Desktop/proje11/proje11.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source micro_tb.tcl
+close_sim
+open_run impl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+close_design
+launch_simulation
+source micro_tb.tcl
+close_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+close_design
+launch_simulation
+source micro_tb.tcl
+close_sim
+open_run impl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+launch_simulation
+source micro_tb.tcl
+close_sim
+launch_simulation
+source micro_tb.tcl
+close_sim
+launch_simulation
+source micro_tb.tcl
+close_sim
+launch_simulation
+source micro_tb.tcl
+close_sim
+launch_simulation
+source micro_tb.tcl
+close_sim
+open_bd_design {C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/bd/design_1/design_1.bd}
+close [ open {C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/Program Counter.sv} w ]
+add_files {{C:/Users/bjk_e/Desktop/proje11/proje11.srcs/sources_1/new/Program Counter.sv}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source micro_tb.tcl
+close_sim
+launch_simulation
+source micro_tb.tcl
+close_sim
+launch_simulation
+source micro_tb.tcl
+close_sim
+launch_simulation
+source micro_tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+launch_simulation
+source micro_tb.tcl
+close_sim
+launch_simulation
+source micro_tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+launch_simulation
+source micro_tb.tcl
+close_sim
+launch_simulation
+source micro_tb.tcl
+close_sim
+launch_simulation
+source micro_tb.tcl
+close_sim
+launch_simulation
+source micro_tb.tcl
+close_sim
